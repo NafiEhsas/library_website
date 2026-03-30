@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Hero */
+.hero {
+    height: 90vh;
+    background: url('./assets/herosection.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    animation-name: herosectionBackground;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-fill-mode:both;
+    animation-timing-function: ease-in-out;
+    transition: 360ms;
+}
+
+@keyframes herosectionBackground {
+    0%{
+    background: url('./assets/herosection.jpg') center/cover no-repeat;
+    }
+    30%{
+    background: url('./assets/herosection2.jpg') center/cover no-repeat;
+
+    }
+    70%{
+    background: url('./assets/herosection3.jpg') center/cover no-repeat;
+    }
+    90%{
+    background: url('./assets/herosection4.jpg') center/cover no-repeat;
+
+    }
+    100%{
+        background: url('./assets/herosection.jpg') center/cover no-repeat;
+
+
+    }
+}
+
+
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+/* Sections */
+.section {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.light {
+    background: #f1f5f9;
+}
+
+/* Books */
+.books {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    overflow: none;
+    width: 100%;
+}
+
+
+
+/* Footer */
+footer {
+    background: #020617;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+ .featured_book {
+    background: #fff;
+    border-radius: 16px;
+    padding: 40px;
+    width: 30vw;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    
+}
+
+.imgDiv{
+  
+    height: 50vh;
+
+}
+
+.featured_book:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.featured_book img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.book-contents {
+    margin-top: 12px;
+}
+
+.book-contents h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+}
+
+.book-contents p {
+    font-size: 14px;
+    color: #777;
+}
+
+.sellInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.discountPrice {
+    font-weight: bold;
+    color: #2563eb; 
+    font-size: 24px;
+}
+
+.actualPrice {
+    text-decoration: line-through red;
+    color: #999;
+    margin-left: 6px;
+    font-size: 16px;
+}
+
+.sellInfo p:last-child {
+    color: #fbbf24; 
+    font-size: 16px;
+}
+
+
+.category {
+    width: 180px;
+    height: 100px;
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    gap: 10px;
+    
+}
+
+.category p {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Hover Effect */
+.category:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.categories{
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+
+
+.testimonials {
+    padding: 60px 20px;
+    background: #f9fafb;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.testimonial-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    text-align: left;
+    transition: 0.3s;
+}
+
+.testimonial:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.message {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.user h4 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.user span {
+    font-size: 13px;
+    color: #888;
+}

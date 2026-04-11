@@ -1,41 +1,119 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
 }
 
-/* Navbar */
+#search_container {
+    position: relative;
+    width: 280px;
+}
+
+#search_container input {
+    width: 100%;
+    padding: 10px 15px 10px 40px; /* space for icon */
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+    backdrop-filter: blur(10px);
+}
+
+/* Placeholder color */
+#search_container input::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+/* Icon */
+#search_container i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 14px;
+}
+
+/* Focus effect */
+#search_container input:focus {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 0 2px rgba(255,255,255,0.3);
+}
+
+header #buttons_container{
+    display: flex;
+}
+
+
+#buttons_container button, #buttons_container div {
+    border: none;
+    width: 30px;
+    height:30px;
+    border-radius: 15px;    
+}
+
+#buttons_container div{
+    margin-left:20px;
+}
+
 .navbar {
-    background: linear-gradient(135deg, #1e3a5f, #0f172a);
-    padding: 15px 40px;
+    background: linear-gradient(180deg, var(--primary), var(--primary-dark));
+    padding: 15px;
     position: sticky;
-    z-index: 1000;
     top: 0;
+    z-index: 1000;
+    /* box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px; */
 }
 
+
+/* Container */
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
+/* Logo */
 .logo {
     color: white;
+    font-size: 30px;
+    font-weight: bold;
 }
 
+/* Links */
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 25px;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
     transition: 0.3s;
+    font-weight: 300;
+    position: relative;
 }
 
-.nav-links a:hover {
-    color: #4ecdc4;
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: white;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
 }
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+

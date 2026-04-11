@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ps">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+    .nav-links li:nth-of-type(3) a::after{
+    width: 100%;
+    background:linear-gradient(to right,red,yellow);
+}
+</style>
+<body>
+    
+        <nav class="navbar">
+        <div class="nav-container">
+            <h2 class="logo">ABNE Library</h2>
+            <ul class="nav-links">
+                <li><a href="index.html">کور پاڼه</a></li>
+                <li><a href="about.html">زموږ په اړه</a></li>
+                <li><a href="books.html">کتابونه</a></li>
+                <li><a href="#">تماس</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <button onclick="message()">log in</button>
+</body>
+
+<script>
+    function message(){
+        alert("Hello Shams")
+    }
+</script>
+</html>

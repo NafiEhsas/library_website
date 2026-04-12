@@ -1,0 +1,49 @@
+    .nav-links li:nth-of-type(2) a::after{
+    width: 100%;
+    background:linear-gradient(to right,red,yellow);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+}
+
+#discountSection{
+    padding: 10px;
+    text-align: center;
+}
+
+#discountBooks{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    overflow: auto;
+      scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.items{
+    width:180px;
+    height: 270px;
+    flex-shrink: 0;
+    cursor: pointer;
+    padding: 10px;
+    padding-top: 10px;
+    
+}
+
+.item img:hover{
+    transform: scale(1.1);
+}
+
+
+img{
+    transition: 360ms;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+

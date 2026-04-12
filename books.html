@@ -6,34 +6,120 @@
     <title>Document</title>
         <link rel="stylesheet" href="navbar.css">
         <link rel="stylesheet" href="style.css">
-
+        <link rel="stylesheet" href="booksPageStyle.css">
 </head>
-<style>
-    .nav-links li:nth-of-type(3) a::after{
-    width: 100%;
-    background:linear-gradient(to right,red,yellow);
-}
-</style>
+
 <body>
-    
-        <nav class="navbar">
+
+<header>
+    <div id="logo_container">
+        <img src="./assets/logos/Ehsas Library logo design.png" alt="logo" >
+    </div>
+
+    <div id="search_container">
+        <img src="./assets/icons/search.png" alt="search" dir="rtl">
+        <input type="text" placeholder="کتاب ولټوئ...">
+    </div>
+
+    <div id="buttons_container">
+        <button>
+            <img src="./assets/headerIcons/sun.png" alt=""  width="18" height="18">
+        </button>
+        <div>
+            <img src="./assets/profile/profile.png" alt=""  width="30" height="30">
+        </div>
+    </div>
+</header>
+
+    <nav class="navbar">
         <div class="nav-container">
-            <h2 class="logo">ABNE Library</h2>
             <ul class="nav-links">
                 <li><a href="index.html">کور پاڼه</a></li>
-                <li><a href="about.html">زموږ په اړه</a></li>
                 <li><a href="books.html">کتابونه</a></li>
+                <li><a href="news.html">خبرونه</a></li>
+                <li><a href="instructor.html">لارښود</a></li>
                 <li><a href="#">تماس</a></li>
+                <li><a href="about.html">زموږ په اړه</a></li>
             </ul>
         </div>
     </nav>
 
-    <button onclick="message()">log in</button>
-</body>
 
-<script>
-    function message(){
-        alert("Hello Shams")
-    }
-</script>
+    <main id="booksContainer">
+        <section id="discountSection">
+            <h1>ددي هفتي تخفیف سوي کتابونه</h1>
+            <div id="discountBooks">
+                <div class="items">
+                    <img src="./assets/books/91nTst7WydL._SL1500_ (1).jpg" alt=""  >
+                </div>
+                <div class="items">
+                    <img src="./assets/books/61deQkvqEhL._SY522_.jpg" alt=""  >
+                </div>
+                <div class="items">
+                    <img src="./assets/books/61m3TM09tBL._SL1500_.jpg" alt=""  >
+                </div>
+                <div class="items">
+                    <img src="./assets/books/61n426DIpsL.jpg" alt=""  >
+                </div>
+                <div class="items">
+                    <img src="./assets/books/71b56YXb2rL._SL1500_.jpg" alt=""  >
+                </div>
+                <div class="items">
+                    <img src="./assets/books/81mpSoJzv4L._SL1446_.jpg" alt=""  >
+                </div>
+                <div class="items">
+                    <img src="./assets/books/71qs0w7jvWL._SL1500_.jpg" alt=""  >
+                </div>
+                <div class="items">
+                    <img src="./assets/books/91nTst7WydL._SL1500_ (1).jpg" alt=""  >
+                </div>
+                <div class="items">
+                    <img src="./assets/books/91nTst7WydL._SL1500_ (1).jpg" alt=""  >
+                </div>
+                <div class="items">
+                    <img src="./assets/books/91nTst7WydL._SL1500_ (1).jpg" alt=""  >
+                </div>
+                <div class="items">
+                    <img src="./assets/books/91nTst7WydL._SL1500_ (1).jpg" alt=""  >
+                </div>
+                <div class="items">
+                    <img src="./assets/books/91nTst7WydL._SL1500_ (1).jpg" alt=""  >
+                </div>
+            </div>
+        </section>
+        <section id="discountSection">
+            <h1>ددي هفتي تخفیف سوي کتابونه</h1>
+            <div id="discountBooks">
+                <div class="items">
+                    <img src="./assets/books/91nTst7WydL._SL1500_ (1).jpg" alt=""  >
+                </div>
+            </div>
+        </section>
+        <section id="discountSection">
+            <h1>ددي هفتي تخفیف سوي کتابونه</h1>
+            <div id="discountBooks">
+                <div class="items">
+                    <img src="./assets/books/91nTst7WydL._SL1500_ (1).jpg" alt=""  >
+                </div>
+            </div>
+        </section>
+        <section id="discountSection">
+            <h1>ددي هفتي تخفیف سوي کتابونه</h1>
+            <div id="discountBooks">
+                <div class="items">
+                    <img src="./assets/books/91nTst7WydL._SL1500_ (1).jpg" alt=""  >
+                </div>
+            </div>
+        </section>
+        <section id="discountSection">
+            <h1>ددي هفتي تخفیف سوي کتابونه</h1>
+            <div id="discountBooks">
+                <div class="items">
+                    <img src="./assets/books/91nTst7WydL._SL1500_ (1).jpg" alt=""  >
+                </div>
+            </div>
+        </section>
+
+    </main>
+
 </html>

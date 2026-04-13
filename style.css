@@ -369,6 +369,7 @@ h6 {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 30px;
   padding: 0 50px;
+
 }
 
 .footer-section h2,
@@ -380,6 +381,7 @@ h6 {
 .footer-section p {
   font-size: 14px;
   line-height: 1.6;
+  
 }
 
 .footer-section ul {
@@ -403,8 +405,9 @@ h6 {
 }
 
 .footer-section-about{
-  width: 250px;
+  width: 100%;
   text-align: center;
+  
 }
 
 .socials{
@@ -434,6 +437,9 @@ h6 {
 }
 
 
+.footer-section{
+  text-align: center;
+}
 .footer-bottom {
   text-align: center;
   padding: 20px;
@@ -441,6 +447,8 @@ h6 {
   border-top: 1px solid #334155;
   font-size: 14px;
 }
+
+
 
 
 span{

@@ -1,0 +1,115 @@
+
+:root {
+  --bg-color: #00272b;
+  --card-bg-color: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  --nav-head-bg-color: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  --text-color: #fffcef;
+}
+
+@font-face {
+  font-family: "bahij badr";
+  src: url("./assets//fonts/Bahij\ Badr-Bold.ttf");
+}
+
+@font-face {
+  font-family: "bahij nazanin";
+  src: url("./assets/fonts/Bahij\ Nazanin-Regular.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+main{
+    width: 100%;
+    padding: 15px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--nav-head-bg-color);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-bottom: 2px solid gray;
+
+}
+
+section #steps{
+
+     display: grid;
+  grid-template-columns: 1fr 1fr;
+    
+    justify-content: space-around;
+    padding: 15px;
+    
+
+
+}
+
+@media (max-width: 800px) {
+    section #steps{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: space-around;
+        padding: 15px;
+    
+    
+    }
+
+    #steps div h1{
+    font-size:50px;
+}
+section img{
+    width: 400px;
+    height: 400px;
+}
+#steps div p{
+    font-size: 20px;
+}
+}
+@media (min-width: 800px) {
+    section #steps{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-around;
+        padding: 15px;
+    
+    
+    }
+
+    #steps div h1{
+    font-size:100px;
+}
+
+section img{
+    width: 450px;
+    height: 450px;
+}
+#steps div p{
+    font-size: 80px;
+}
+}
+
+#steps div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+section #titleDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+p,h1{
+    direction: rtl;
+}

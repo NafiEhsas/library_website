@@ -1,0 +1,137 @@
+   
+:root {
+  --bg-color: #00272b;
+  --card-bg-color: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  --nav-head-bg-color: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  --text-color: #fffcef;
+}
+
+@font-face {
+  font-family: "bahij badr";
+  src: url("./assets//fonts/Bahij\ Badr-Bold.ttf");
+}
+
+@font-face {
+  font-family: "bahij nazanin";
+  src: url("./assets/fonts/Bahij\ Nazanin-Regular.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+    .nav-links li:nth-of-type(5) a::after{
+    width: 100%;
+    background:linear-gradient(to right,red,yellow);
+}
+   
+   body {
+            background: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .location-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .map-container {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid rgba(255,215,0,0.2);
+        }
+
+        .map-container h3 {
+            background: rgba(0,0,0,0.3);
+            padding: 15px;
+            color: #ffd700;
+            font-size: 1.3rem;
+            margin: 0;
+        }
+
+        .map-wrapper {
+            padding: 15px;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+ 
+
+        .info-card {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255,215,0,0.2);
+        }
+
+        .info-card h3 {
+            color: #ffd700;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .info-card p {
+            margin: 12px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .info-card strong {
+            color: #ffd700;
+        }
+
+        .hours-table {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .hours-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,215,0,0.2);
+        }
+
+        .hours-row:last-child {
+            border-bottom: none;
+        }
+
+        .day {
+            font-weight: bold;
+        }
+
+        .time {
+            color: #ffd700;
+        }
+
+        .closed {
+            color: #ff6b6b;
+        }
+
+
+        @media (max-width: 768px) {
+            .location-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .map-wrapper {
+                min-height: 300px;
+            }
+     
+        }

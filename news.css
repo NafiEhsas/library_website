@@ -1,0 +1,103 @@
+
+
+:root {
+  --bg-color:#00272b;
+  --card-bg-color:linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  --nav-head-bg-color:linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    --text-color:#FFFCEF;
+
+}
+
+@font-face {
+    font-family: 'bahij badr';
+    src: url('./assets//fonts/Bahij\ Badr-Bold.ttf');
+
+}
+
+@font-face {
+    font-family: 'bahij nazanin';
+    src: url('./assets/fonts/Bahij\ Nazanin-Regular.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.nav-links li:nth-of-type(3) a::after {
+  width: 100%;
+  background: linear-gradient(to right, red, yellow);
+}
+
+main{
+    display: grid;
+       grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 25px;
+  padding: 15px;
+  background: var(--bg-color);
+  padding-bottom: 20px;
+}
+    .news-card {
+        background: linear-gradient(135deg, #0f2027, #203a43);
+        border-radius: 16px;
+        overflow: hidden;
+        max-width: 380px;
+        transition: transform 360ms, box-shadow 360ms;
+        cursor: pointer;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .news-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    }
+
+    .news-img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .news-content {
+        padding: 20px;
+    }
+
+
+
+    .news-title {
+        font-size: 1.3rem;
+        margin-bottom: 12px;
+        line-height: 1.4;
+        color: #FFFCEF;
+        direction: rtl;
+    }
+
+    .news-meta {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 12px;
+        font-size: 0.8rem;
+        color: rgba(255,252,239,0.7);
+    }
+
+    .news-date, .news-author {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .news-description {
+        line-height: 1.6;
+        margin-bottom: 16px;
+        color: rgba(255,252,239,0.9);
+    }
+
+    .read-more-btn {
+        display: inline-block;
+        color: var(--text-color);
+        text-decoration: none;
+        font-weight: bold;
+        transition: gap 360ms;
+    }
+
+    .read-more-btn:hover {
+        gap: 8px;
+        padding-right: 8px;
+    }

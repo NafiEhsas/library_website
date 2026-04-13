@@ -1,0 +1,68 @@
+    #map_container {
+        width: 100%;
+        max-width: 600px;
+        margin: 20px auto;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+
+
+:root {
+  --bg-color:#00272b;
+  --card-bg-color:linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  --nav-head-bg-color:linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    --text-color:#FFFCEF;
+
+}
+
+@font-face {
+    font-family: 'bahij badr';
+    src: url('./assets//fonts/Bahij\ Badr-Bold.ttf');
+
+}
+
+@font-face {
+    font-family: 'bahij nazanin';
+    src: url('./assets/fonts/Bahij\ Nazanin-Regular.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body{
+    background: var(--bg-color);
+}
+
+p{
+    direction: rtl;
+    font-size: 20px;
+}
+
+h1{
+    direction: rtl;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 15px;
+}
+.nav-links li:nth-of-type(6) a::after {
+  width: 100%;
+  background: linear-gradient(to right, red, yellow);
+}
+
+section ul{
+    width: 90%;
+    font-size: 20px;
+}
+
+
+#locationIcon{
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}

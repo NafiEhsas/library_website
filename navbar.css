@@ -3,13 +3,13 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 12px 40px;
-  background: var(--nav-head-bg-color);
+  background: var(--bg-color);
   color: white;
 }
 
 #logo_container img {
-  width: 5vw;
-  height: 10vh;
+  width: 100px;
+  height: 100px;
 }
 
 #search_container {
@@ -61,7 +61,7 @@ header {
   }
   50% {
     transform: rotateX(0);
-    transform: scale(2);
+    transform: scale(1.2);
   }
   100% {
     transform: rotateX(0);
@@ -77,14 +77,6 @@ header {
   transform: translateY(-1px);
 }
 
-#ad_container img {
-  width: auto;
-  height: 32px;
-  object-fit: contain;
-  border-radius: 40px;
-  transition: opacity 0.2s ease;
-  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.04));
-}
 
 #ad_container span {
   font-size: 11px;
@@ -97,17 +89,10 @@ header {
   font-weight: 500;
   letter-spacing: -0.01em;
   box-shadow: none;
-  font-family:
-    system-ui,
-    -apple-system,
-    "Segoe UI",
-    Roboto,
-    "Helvetica Neue",
-    sans-serif;
+  font-family:'bahij badr'  sans-serif;
   white-space: nowrap;
   background: linear-gradient(135deg, #1f2b38, #2c3e4e);
   background-clip: text;
-  -webkit-background-clip: text;
   color: transparent;
   font-weight: 520;
 }
@@ -122,11 +107,6 @@ header {
   font-weight: 400;
 }
 
-#ad_container:hover span {
-  background: linear-gradient(135deg, #1e2a36, #2c3e50);
-  background-clip: text;
-  -webkit-background-clip: text;
-}
 
 #search_container input::placeholder {
   color: rgba(255, 255, 255, 0.7);
@@ -192,8 +172,10 @@ header {
 }
 
 .navbar {
-  background: var(--nav-head-bg-color);
-
+  background: var(--bg-color);
+  /* box-shadow: 0 6px 20px gray; */
+  /* box-shadow: rgba(240, 18, 18, 0.04) 0px 10px 10px; */
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -23px;
   padding: 15px;
   position: sticky;
   top: 0;
@@ -243,3 +225,37 @@ header {
 .nav-links a:hover::after {
   width: 100%;
 }
+
+@media (max-width: 768px) {
+        header {
+            flex-direction: column;
+            padding: 15px;
+            text-align: center;
+        }
+
+        #ad_container span {
+            font-size: 0.85rem;
+            display: block;
+        }
+
+        #buttons_container {
+            justify-content: center;
+        }
+    }
+
+    @media (max-width: 480px) {
+        #logo_container img {
+            width: 100px;
+            height: 100px;
+        }
+
+        #ad_container span {
+            font-size: 0.7rem;
+        }
+
+        #ad_container{
+          margin-bottom: 5px;
+        }
+
+    
+    }

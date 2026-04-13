@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    
+    <div class="login-container">
+        <div class="login-header">
+            <h1>📚 ننوتل</h1>
+            <p>خپل بریښنالیک او پټ نوم دلته دننه کړئ</p>
+        </div>
+
+        <form onsubmit="event.preventDefault(); alert('تاسو په بریالیتوب سره ننوتل!');">
+            <div class="form-group">
+                <label>بریښنالیک</label>
+                <input type="email" placeholder="example@email.com" required>
+            </div>
+
+            <div class="form-group">
+                <label>پټ نوم</label>
+                <input type="password" placeholder="********" required>
+            </div>
+
+            <button type="submit" class="login-btn">
+                <a href="index.html">
+                    ننوتل
+                </a>
+                
+            </button>
+        </form>
+
+    </div>
+
+</body>
+</html>

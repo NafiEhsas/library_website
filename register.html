@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ps">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>د ګډون فورم - احسان کتابتون</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="register.css">
+ 
+</head>
+<body>
+
+<header>
+    <div id="logo_container">
+        <img src="./assets/logos/Ehsas Library logo design.png" alt="logo">
+    </div>
+    <div id="ad_container">
+        <span>یو کتاب رانیسي او په پچه اچونه کي ګډون وکړي</span>
+    </div>
+
+    <div id="buttons_container">
+        <button>
+            <img src="./assets/headerIcons/sun.png" alt="" width="18" height="18">
+        </button>
+
+        <div>
+            <img src="./assets/profile/profile.png" alt="" width="30" height="30">
+        </div>
+    </div>
+</header>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <ul class="nav-links">
+            <li><a href="index.html">کور پاڼه</a></li>
+            <li><a href="books.html">کتابونه</a></li>
+            <li><a href="news.html">خبرونه</a></li>
+            <li><a href="instructor.html">لارښود</a></li>
+            <li><a href="#">تماس</a></li>
+            <li><a href="about.html">زموږ په اړه</a></li>
+        </ul>
+    </div>
+</nav>
+<main>
+    <div class="register-container">
+        <div class="register-header">
+            <h1>📝 ګډون فورم</h1>
+            <p>مهرباني وکړئ لاندې معلومات ډک کړئ</p>
+        </div>
+
+        <form action="">
+            <div class="row">
+                <div class="form-group">
+                    <label>نوم</label>
+                    <input name="name" type="text" placeholder="خپل نوم دلته ولیکئ" required>
+                </div>
+
+                <div class="form-group">
+                    <label>تخلص</label>
+                    <input type="text" name="lname" placeholder="خپل تخلص دلته ولیکئ" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group">
+                    <label>بریښنالیک</label>
+                    <input type="email" name="email" placeholder="example@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label>شماره تلیفون</label>
+                    <input type="tel" name="phone" placeholder="ټلیفون نمبر" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group">
+                    <label>د تذکرې نمبر</label>
+                    <input type="text" placeholder="خپل تذکره نمبر دلته ولیکئ" required>
+                </div>
+
+                            <div class="form-group">
+                    <label>دنده</label>
+                    <datalist>
+                        <option value="">دنده وټاکئ</option>
+                        <option value="student">محصل</option>
+                        <option>ښوونکی</option>
+                        <option>ډاکټر</option>
+                        <option>انجینر</option>
+                        <option>سوداګر</option>
+                        <option>مستخدم</option>
+                        <option>متقاعد</option>
+                        <option>نور</option>
+                    </datalist>
+                </div>
+
+            </div>
+            
+            <div class="row">
+
+                <div class="form-group">
+                    <label>جنس</label>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="gender" value="male" required> نارینه
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="female"> ښځینه
+                        </label>
+                    </div>
+                </div>
+            </div>
+        
+
+       
+
+            <button type="submit" class="register-btn">ګډون وکړئ</button>
+        </form>
+    </div>
+</main>
+
+</body>
+</html>

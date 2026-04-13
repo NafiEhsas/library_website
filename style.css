@@ -1,9 +1,22 @@
 :root {
-  /* --dark: #0f172a; */
-  /* --bg-color: linear-gradient(135deg, #0f2027, #203a43, #2c5364); */
-  --bg-color:#203a43;
+  --bg-color:#00272b;
   --card-bg-color:linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   --nav-head-bg-color:linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    --text-color:#FFFCEF;
+
+}
+
+@font-face {
+    font-family: 'bahij badr';
+    src: url('./assets//fonts/Bahij\ Badr-Bold.ttf');
+
+}
+
+@font-face {
+    font-family: 'bahij nazanin';
+    src: url('./assets/fonts/Bahij\ Nazanin-Regular.ttf');
+    font-weight: bold;
+    font-style: normal;
 }
 
 button{
@@ -12,6 +25,7 @@ button{
   width:100px;
   height: 30px;
   margin-top: 10px;
+  font-family: 'bahij nazanin';
 
 }
 
@@ -20,13 +34,24 @@ button{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: Arial, sans-serif; */
 
 }
 
+#registerBtn{
+  background:var(--text-color);
+  color: var(--bg-color);
+  font-family: 'bahij badr';
+  font-size: 16px;
+}
 
 body {
-  font-family: "Noto Sans Arabic", sans-serif;
+  font-family: "bahij nazanin", sans-serif;
+  color: var(--text-color);
+}
+
+#registerBtn a{
+  color:var(--bg-color);
+  text-decoration: none;
 }
 
 h1,
@@ -35,7 +60,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Noto Naskh Arabic", serif;
+  font-family: "bahij badr", serif;
 }
 
 .hero {
@@ -169,7 +194,7 @@ h6 {
 }
 
 .section {
-  padding-top: 20px;
+  padding-top: 40px;
   text-align: center;
   background: var(--bg-color);
   color: #ffffff;

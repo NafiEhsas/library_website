@@ -1,49 +1,176 @@
-    .nav-links li:nth-of-type(2) a::after{
-    width: 100%;
-    background:linear-gradient(to right,red,yellow);
+:root {
+  --bg-color: #00272b;
+  --card-bg-color: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  --nav-head-bg-color: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  --text-color: #fffcef;
 }
 
-main{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 15px;
+@font-face {
+  font-family: "bahij badr";
+  src: url("./assets//fonts/Bahij\ Badr-Bold.ttf");
 }
 
-#discountSection{
-    padding: 10px;
-    text-align: center;
+@font-face {
+  font-family: "bahij nazanin";
+  src: url("./assets/fonts/Bahij\ Nazanin-Regular.ttf");
+  font-weight: bold;
+  font-style: normal;
 }
 
-#discountBooks{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    overflow: auto;
-      scrollbar-width: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "bahij nazanin", sans-serif;
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "bahij badr", serif;
+}
+
+.nav-links li:nth-of-type(2) a::after {
+  width: 100%;
+  background: linear-gradient(to right, red, yellow);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 15px;
+  background: var(--bg-color);
+  padding-bottom: 20px;
+}
+
+#bookSection {
+  padding: 10px;
+  text-align: center;
+}
+
+#books {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  overflow: auto;
+  scrollbar-width: none;
   -ms-overflow-style: none;
+  padding: 10px;
 }
-.items{
-    width:180px;
-    height: 270px;
-    flex-shrink: 0;
-    cursor: pointer;
-    padding: 10px;
-    padding-top: 10px;
-    
-}
-
-.item img:hover{
-    transform: scale(1.1);
+.items {
+  width: 180px;
+  height: 270px;
+  flex-shrink: 0;
+  cursor: pointer;
+  padding: 10px;
+  padding-top: 10px;
+  transition: 360ms;
 }
 
-
-img{
-    transition: 360ms;
-    height: 100%;
-    width: 100%;
+.items:hover {
+  transform: scale(1.1);
 }
 
+.items img {
+  height: 100%;
+  width: 100%;
+}
 
+/* Grid layout for all books - shows multiple rows */
+.all-books-section {
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+}
 
+#allBooks {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 20px 10px;
+  justify-items: center;
+  align-items: start;
+}
 
+.item {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.items {
+  width: 100%;
+  max-width: 180px;
+  height: 270px;
+  flex-shrink: 0;
+  cursor: pointer;
+  padding: 10px;
+  transition: 360ms;
+}
+
+.items:hover {
+  transform: scale(1.05);
+}
+
+.items img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 768px) {
+  #allBooks {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 25px;
+  }
+
+  .items {
+    max-width: 200px;
+    height: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #allBooks {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 30px;
+  }
+
+  .items {
+    max-width: 220px;
+    height: 330px;
+  }
+}
+
+.all-books-section {
+  max-height: none;
+  overflow-y: visible;
+}
+
+.load-more-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+      box-shadow: 
+        0 10px 25px rgba(0,0,0,0.3),
+        0 0 15px rgba(255,75,43,0.4),
+        inset 0 2px 6px rgba(255,255,255,0.2);
+        color: var(--text-color);
+        font-family: 'bahij badr';
+        font-size: 20px;
+        cursor: pointer;
+}
+
+.load-more-container:hover{
+    opacity: 0.8;
+}

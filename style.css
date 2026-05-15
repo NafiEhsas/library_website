@@ -47,6 +47,7 @@ button{
 body {
   font-family: "bahij nazanin", sans-serif;
   color: var(--text-color);
+  background-color: var(--bg-color);
 }
 
 #registerBtn a{
@@ -67,7 +68,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: var(--text-color);
   text-align: center;
   position: relative;
   background: url("./assets/herosection.jpg") center/cover no-repeat;
@@ -94,13 +95,6 @@ h6 {
   }
 }
 
-.hero::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-}
 
 .hero-content {
   position: relative;
@@ -116,7 +110,7 @@ h6 {
   height: 40px;
   background: var(--bg-color);
   border: none;
-  color: white;
+  color: var(--text-color);
   margin: 20px;
   border-radius: 6px;
   cursor: pointer;
@@ -137,10 +131,10 @@ h6 {
   align-items: center;
   background: var(--bg-color);
   padding: 20px;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
-#featureCards {
+#featureCards,#featureCards1 {
   display: flex;
   gap: 20px;
   min-width: 400px;
@@ -152,12 +146,12 @@ h6 {
   padding: 25px;
 }
 .featureCard {
-  background: var(--card-bg-color);
+  background: var(--bg-color);
   border-radius: 16px;
   padding: 30px 20px;
   width: 280px;
   text-align: center;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 12px 25px rgba(125, 113, 113, 0.08);
   transition:
     transform 0.3s,
     box-shadow 0.3s;
@@ -165,7 +159,7 @@ h6 {
   flex-direction: column;
   align-items: center;
   flex-shrink: 0;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 .featureCard:hover {
@@ -175,7 +169,7 @@ h6 {
 
 .featureIcon {
   background: #f0f4ff;
-  color: #3b82f6; /* primary color */
+  color: #3b82f6; 
   font-size: 32px;
   width: 70px;
   height: 70px;
@@ -197,7 +191,7 @@ h6 {
   padding-top: 40px;
   text-align: center;
   background: var(--bg-color);
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 /* Books */
@@ -210,7 +204,7 @@ h6 {
   margin-left: 0;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  color: #ffffff;
+  color: var(--text-color);
 
 }
 
@@ -220,11 +214,11 @@ h6 {
   padding: 40px;
   width: 300px;
   min-width: 100px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+   box-shadow: 0 12px 25px rgba(125, 113, 113, 0.08);
   transition: 0.3s;
   cursor: pointer;
   flex-shrink: 0;
-  background:var(--card-bg-color);
+  background:var(--bg-color);
 }
 
 .featured_book:hover {
@@ -254,13 +248,13 @@ h6 {
 .book-contents h2 {
   font-size: 18px;
   font-weight: 600;
-  color: white;
+  color: var(--text-color);
 }
 
 .book-contents p {
   font-size: 14px;
-  /* color: white; */
-  color: white;
+  /* color: var(--text-color); */
+  color: var(--text-color);
 }
 
 .sellInfo {
@@ -272,14 +266,14 @@ h6 {
 
 .discountPrice {
   font-weight: bold;
-  color: white;
+  color: var(--text-color);
   font-size: 24px;
 }
 
 .actualPrice {
   text-decoration: line-through;
-  /* color: white; */
-  color: white;
+  /* color: var(--text-color); */
+  color: var(--text-color);
   margin-left: 6px;
   font-size: 16px;
 }
@@ -289,19 +283,18 @@ h6 {
   font-size: 16px;
 }
 
-/* Testimonials */
 .testimonials {
   padding: 60px 20px;
   background: var(--bg-color);
   text-align: center;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 .testimonials h2 {
   font-size: 28px;
   margin-bottom: 40px;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 .testimonial-container {
@@ -312,11 +305,12 @@ h6 {
 }
 
 .testimonial {
-  background: var(--card-bg-color);
+  background: var(--bg-color);
   padding: 20px;
   width: 300px;
   border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 12px 25px rgba(125, 113, 113, 0.08);
+
   text-align: left;
   transition: 0.3s;
 }
@@ -328,9 +322,11 @@ h6 {
 
 .message {
   font-size: 15px;
-  color: white;
+  color: var(--text-color);
   margin-bottom: 20px;
   line-height: 1.6;
+  float: right;
+
 }
 
 .user {
@@ -351,13 +347,13 @@ h6 {
 
 .user span {
   font-size: 13px;
-  color: white;
+  color: var(--text-color);
 }
 
 
 .footer {
   background: var(--bg-color);
-  color: #e2e8f0;
+  color: var(--text-color);
   padding-top: 50px;
   
 }
@@ -374,7 +370,7 @@ h6 {
 
 .footer-section h2,
 .footer-section h3 {
-  color: white;
+  color: var(--text-color);
   margin-bottom: 15px;
 }
 
@@ -394,7 +390,7 @@ h6 {
 
 .footer-section ul li a {
   text-decoration: none;
-  color: #cbd5f5;
+  color: var(--text-color);
   transition: 0.3s;
 }
 
@@ -435,8 +431,6 @@ h6 {
   justify-content: center;
   align-items: center;
 }
-
-
 .footer-section{
   text-align: center;
 }
@@ -447,11 +441,89 @@ h6 {
   border-top: 1px solid #334155;
   font-size: 14px;
 }
-
-
-
-
 span{
   padding-left: 10px;
   font-size: 14px;
+}
+
+
+
+        .faq-section {
+            width: 90%;
+            margin: 60px auto;
+        }
+
+        .faq-section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 35px;
+        }
+
+        .faq-item {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            background: var(--bg-color);
+        }
+
+        .faq-question {
+            width: 100%;
+            background: var(--bg-color);
+            border: none;
+            padding: 18px;
+            font-size: 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .faq-question span {
+            font-size: 24px;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: 0.3s ease;
+            background: var(--bg-color);
+            padding: 0 18px;
+        }
+
+        .faq-answer p {
+            padding: 15px 0;
+            line-height: 1.8;
+        }
+
+
+        /* Demo Video Section */
+.demo-video-section{
+    width: 90%;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.demo-video-section h1{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.demo-video-section p{
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.video-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.video-container video{
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }

@@ -47,7 +47,7 @@ main{
     display: flex;
     flex-direction: column;
     gap: 80px;
-    padding: 15px;
+    padding: 30px;
 }
 .nav-links li:nth-of-type(6) a::after {
   width: 100%;

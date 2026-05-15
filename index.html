@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABNE Library</title>
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navbar.css">
 
@@ -13,449 +14,284 @@
     <link rel="preload" as="image" href="./assets/herosection3.jpg">
     <link rel="preload" as="image" href="./assets/herosection4.jpg">
 
-
 </head>
 <style>
-    .nav-links li:nth-of-type(1) a::after{
-    width: 100%;
-    background:linear-gradient(to right,red,yellow);
+    .nav-links li:nth-of-type(1) a::after {
+  width: 100%;
+  background: linear-gradient(to right, red, yellow);
 }
 </style>
-<body>
 
-<header>
-    <div id="logo_container">
-        <img src="./assets/logos/Ehsas Library logo design.png" alt="logo">
-    </div>
-    <div id="ad_container">
-        <span>یو کتاب رانیسي او په پچه اچونه کي ګډون وکړي</span>
-    </div>
 
-    <div id="buttons_container">
-        <button>
-            <img src="./assets/headerIcons/sun.png" alt="" width="18" height="18">
-        </button>
+<body dir="rtl">
 
-        <button>
-            <img src="./assets/profile/profile.png" alt="" width="30" height="30">
-        </button>
-          <button>
-            <a href="login.html">
-                <img src="./assets/icons/logout.png" alt=""  width="30" height="30">
-            </a>
-        </button>
-    </div>
-</header>
+    <header>
+        <div id="logo_container">
+            <img src="./assets/logos/Ehsas Library logo design.png" alt="logo">
+        </div>
+
+        <div id="ad_container">
+            <span>یو کتاب رانیسي او په پچه اچونه کي ګډون وکړي</span>
+        </div>
+
+        <div id="buttons_container">
+
+            <button id="modeBtn">
+                <img src="./assets/headerIcons/sun.png" alt="" width="18" height="18">
+            </button>
+
+            <button>
+                <img src="./assets/profile/profile.png" alt="" width="30" height="30">
+            </button>
+
+            <button>
+                <a href="login.html">
+                    <img src="./assets/icons/logout.png" alt="" width="30" height="30">
+                </a>
+            </button>
+
+        </div>
+    </header>
 
     <nav class="navbar">
         <div class="nav-container">
+
             <ul class="nav-links">
                 <li><a href="index.html">کور پاڼه</a></li>
                 <li><a href="books.html">کتابونه</a></li>
                 <li><a href="news.html">خبرونه</a></li>
                 <li><a href="instructor.html">لارښود</a></li>
-                <li><a href="visitUs.html"> لیدنه وکړئ</a></li>
+                <li><a href="visitUs.html">لیدنه وکړئ</a></li>
                 <li><a href="about.html">زموږ په اړه</a></li>
                 <li><a href="register.html">غړیتوب</a></li>
             </ul>
+
         </div>
     </nav>
 
     <section class="hero">
+
         <div class="hero-content">
             <h1>احساس کتابتون ته ښه راغلاست</h1>
-            <h2>همدا نن زموږ سره ځان راجستر کړي او د یوی هفتي لپاره زموږ خدمات وړیا تر لاسه کړي</h2>
+
+            <h2>
+                همدا نن زموږ سره ځان راجستر کړي او د یوی هفتي لپاره زموږ خدمات وړیا تر لاسه کړي
+            </h2>
+
             <button id="registerBtn">
                 <a href="register.html">
                     ځان راجیستر کړي
                 </a>
             </button>
         </div>
-    </section>
 
+    </section>
 
 
     <section id="featureSection">
         <h1>خدمات</h1>
-        <div id="featureCards">
-
-            <div class="featureCard">
-                <div class="featureIcon">
-                    <a href="books.html">
-                        <img src="./assets/icons/stack-of-books.png" alt="" width="100" height="100">
-                    </a>
-                </div>
-                <h3 class="featureTitle">کتابونه ۱۰۰۰۰+ </h3>
-            </div>
-
-            <div class="featureCard">
-                <div class="featureIcon">
-                    <a href="books.html">
-                        <img src="./assets/icons/delivery.png" alt="" width="100" height="100">
-                    </a>
-                </div>
-                <h3 class="featureTitle">کتاب ارډر او ډیلوري</h3>
-            </div>
-
-            <div class="featureCard">
-                <div class="featureIcon">
-                    <a href="books.html">
-                        <img src="./assets/icons/signing.png" alt="" width="100" height="100">
-                    </a>
-                </div>
-                <h3 class="featureTitle">کتابونه پورکول</h3>
-            </div>
-            <div class="featureCard">
-                <div class="featureIcon">
-                    <a href="register.html">
-                        <img src="./assets/icons/member-card.png" alt="" width="100" height="100">
-                    </a>
-                </div>
-                <h3 class="featureTitle">کتابتون غړیتوب ترلاسه کول </h3>
-            </div>
-        </div>
+        <div id="featureCards"></div>
     </section>
-
 
     <section class="section">
         <h1>ډیر خوښ سوي کتابونه</h1>
-        <div class="books">
-
-            <div class="featured_book">
-                <div class="imgDiv">
-                    <a href="books.html">
-                        <img src="./assets/books/Seerat-Ul-Nabi-S.A.W-By-Maulana-Muhammad-Idrees-Kandhlavi.jpg" alt="">
-                    </a>
-                </div>
-
-                <div class="book-contents">
-                    <h2>سیرت النبي</h2>
-                    <p>احمد</p>
-                </div>
-
-                <div class="sellInfo">
-                    <p class="discountPrice">10$ <span class="actualPrice">14$</span></p>
-                    <p>★★★★★</p>
-                </div>
-
-
-            </div>
-            <div class="featured_book">
-                <div class="imgDiv">
-                    <a href="books.html">
-
-                        <img src="./assets/books/who-is-allah-by-umm-abdurrahman-sakina-hirschfelder-ebook.jpg" alt="">
-                    </a>
-                </div>
-
-                <div class="book-contents">
-                    <h2>Who is Allah</h2>
-                    <p>محمد</p>
-                </div>
-
-                <div class="sellInfo">
-                    <p class="discountPrice">10$ <span class="actualPrice">14$</span></p>
-                    <p>★★★★★</p>
-                </div>
-
-
-            </div>
-            <div class="featured_book">
-                <div class="imgDiv">
-                    <a href="books.html">
-                        <img src="./assets/books/who-is-allah-and-his-prophet-pbuh-darussalam-20180420-143947.webp" alt="">
-                    </a>
-                </div>
-
-                <div class="book-contents">
-                    <h2>Allah and his Prophet</h2>
-                    <p>حشمت</p>
-                </div>
-
-                <div class="sellInfo">
-
-                    <p class="discountPrice">10$ <span class="actualPrice">14$</span></p>
-                    <p>★★★★★</p>
-                </div>
-
-
-            </div>
-
-
-            <div class="featured_book">
-                <div class="imgDiv">
-                    <a href="books.html">
-                        <img src="./assets/books/sahih-muslim-abridged.jpg" alt="" >
-                    </a>
-                </div>
-
-                <div class="book-contents">
-                    <h2>صحیح المسلم</h2>
-                    <p>خان</p>
-                </div>
-
-                <div class="sellInfo">
-                    <p class="discountPrice">10$ <span class="actualPrice">14$</span></p>
-                    <p>★★★★★</p>
-                </div>
-
-
-            </div>
-
-
-
-
-        </div>
+        <div class="books" id="popularBooks"></div>
     </section>
 
+ 
     <section class="section">
         <h1>ډیر پلټل سوي کتابونه</h1>
-        <div class="books">
-
-            <div class="featured_book">
-                <div class="imgDiv">
-                    <a href="books.html">
-
-                        <img src="./assets/books/Seerat-Ul-Nabi-S.A.W-By-Maulana-Muhammad-Idrees-Kandhlavi.jpg" alt="">
-                    </a>
-                </div>
-
-                <div class="book-contents">
-                    <h2>Sahih al-Bukhari</h2>
-                    <p>Imam Muhammad al-Bukhari</p>
-                </div>
-
-                <div class="sellInfo">
-                    <p class="discountPrice">10$ <span class="actualPrice">14$</span></p>
-                    <p>★★★★★</p>
-                </div>
-
-
-            </div>
-            <div class="featured_book">
-                <div class="imgDiv">
-                    <a href="books.html">
-
-                        <img src="./assets/books/who-is-allah-by-umm-abdurrahman-sakina-hirschfelder-ebook.jpg" alt="">
-                    </a>
-                </div>
-
-                <div class="book-contents">
-                    <h2>Sahih al-Bukhari</h2>
-                    <p>Imam Muhammad al-Bukhari</p>
-                </div>
-
-                <div class="sellInfo">
-                    <p class="discountPrice">10$ <span class="actualPrice">14$</span></p>
-                    <p>★★★★★</p>
-                </div>
-
-
-            </div>
-            <div class="featured_book">
-                <div class="imgDiv">
-                    <a href="books.html">
-
-                        <img src="./assets/books/who-is-allah-and-his-prophet-pbuh-darussalam-20180420-143947.webp" alt="">
-                    </a>
-                </div>
-
-                <div class="book-contents">
-                    <h2>Sahih al-Bukhari</h2>
-                    <p>Imam Muhammad al-Bukhari</p>
-                </div>
-
-                <div class="sellInfo">
-                    <p class="discountPrice">10$ <span class="actualPrice">14$</span></p>
-                    <p>★★★★★</p>
-                </div>
-
-
-            </div>
-
-
-            <div class="featured_book">
-                <div class="imgDiv">
-                    <a href="books.html">
-
-                        <img src="./assets/books/sahih-muslim-abridged.jpg" alt="" >
-                    </a>
-                </div>
-
-                <div class="book-contents">
-                    <h2>Sahih al-Bukhari</h2>
-                    <p>Imam Muhammad al-Bukhari</p>
-                </div>
-
-                <div class="sellInfo">
-                    <p class="discountPrice">10$ <span class="actualPrice">14$</span></p>
-                    <p>★★★★★</p>
-                </div>
-            </div>
-            
-        </div>
+        <div class="books" id="searchedBooks"></div>
     </section>
 
 
-    
     <section id="featureSection">
         <h1>ولی باید موږ انتخاب کري؟</h1>
-        <div id="featureCards">
-   <div class="featureCard">
-                <div class="featureIcon">
-                    <img src="./assets/icons/book.png" alt="" width="100" height="100">
-                </div>
-                <h2 class="featureTitle">زرګونه کتابونه په یوه ځای کي</h2>
-                <p>زرګونه کتابونه ستاسو د مطالعي او پوهي د ودي لپاره شتون لري </p>
-            </div>
-            <div class="featureCard">
-                <div class="featureIcon">
-                    <img src="./assets/icons/chronometer.png" alt="" width="100" height="100">
-                </div>
-                <h2 class="featureTitle">پر وخت ډیلوري</h2>
-                <p>
-                   موږ ستاسو ارډر په مشخص وخت کی تر تاسو پوری در رسو
-                </p>
-            </div>
+        <div id="featureCards1"></div>
+    </section>
 
-            <div class="featureCard">
-                <div class="featureIcon">
-                    <img src="./assets/icons/books.png" alt="" width="100" height="100">
-                </div>
-                <h2 class="featureTitle">د پوهي وده</h2>
-                <p>زموږ سره خپلي پوهي ته وده ورکړي</p>
-            </div>
+    <section>
+        <div class="testimonials">
 
-            <div class="featureCard">
-                <div class="featureIcon">
-                    <img src="./assets/icons/loan.png" alt="" width="100" height="100">
-                </div>
-                <h2 class="featureTitle">په اساني سره د کتابونو پور کول</h2>
-                <p>تاسو کولای سي کتابونه په انلاین ډول پور کړي</p>
-            </div>
+            <h2 dir="rtl">نظرونه</h2>
 
-         
+            <div class="testimonial-container" id="testimonialContainer"></div>
+
         </div>
     </section>
 
+<section class="demo-video-section">
 
-<section>
+    <h1>د کتابتون ویډیو ډیمو</h1>
 
-    <div class="testimonials">
-        <h2>نظرونه</h2>
-        
-        <div class="testimonial-container">
-            
-            <div class="testimonial">
-                <div class="user">
-                    <img src="./assets/humans/20251220_114409.jpg" alt="">
-                    <div>
-                        <h4>روح الله</h4>
-                        <span>غړی</span>
-                    </div>
-                </div>
-                <p class="message" dir="rtl">
-                    “مننه ، دا ویب سایټ زما د مطالعي لپاره ډيري اسانتیاوي رامنځته کړي”
-                </p>
-            </div>
-            
-            <div class="testimonial">
-                <div class="user">
-                    <img src="./assets/humans/20251220_114153.jpg" alt="">
-                    <div>
-                        <h4>احمد</h4>
-                        <span>غړی</span>
-                    </div>
-                </div>
-                <p class="message" dir="rtl">
-                    “کور مو ودان چی انلاین کتابتون مو جوړ کړي”
-                </p>
-            </div>
+    <p>
+        زموږ د کتابتون د خدماتو او سیستم لنډه ویډیو وګورئ
+    </p>
+    <div class="video-container">
 
-            <div class="testimonial">
-                <div class="user">
-                    <img src="./assets/humans/20251220_114340.jpg" alt="">
-                    <div>
-                        <h4>حکمت الله</h4>
-                        <span>غړي</span>
-                    </div>
-                </div>
-                <p class="message" dir="rtl">
-                    “دا چیری یی چی ورک یی”
-                </p>
-            </div>
-            
-        </div>
+        <video controls autoplay muted loop>
+            <source src="./assets/Recording 2026-05-15 221948.mp4" type="video/mp4">
+
+            ستاسو براوزر د ویډیو ملاتړ نه کوي
+        </video>
+
     </div>
 </section>
-    
 
+    <section class="faq-section">
+
+        <h2>ډیری پوښتل سوي پوښتني</h2>
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+                څنګه کولای شو کتاب پور کړو؟
+                <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+                <p>
+                    تاسو کولای شئ د غړیتوب وروسته کتابونه د یوې ټاکلې مودې لپاره پور کړئ.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+                ایا آنلاین کتابونه هم شتون لري؟
+                <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+                <p>
+                    هو، تاسو کولای شئ ډیجیټل او PDF کتابونه آنلاین مطالعه یا ډاونلوډ کړئ.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+                د غړیتوب فیس څومره دی؟
+                <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+                <p>
+                    زموږ د غړیتوب فیس مناسب دی او ځینې خدمات په وړیا ډول هم وړاندې کیږي.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+                څنګه حساب جوړ کړو؟
+                <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+                <p>
+                    د راجستر پاڼې ته لاړ شئ، معلومات داخل کړئ او خپل حساب جوړ کړئ.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
 
     <footer class="footer">
+
         <div class="footer-container">
 
             <div class="footer-section-about">
+
                 <h2 class="logo">احساس کتابتون</h2>
+
                 <p dir="rtl">
                     احساس کتابتون د زده کړې او پوهې لپاره یو بشپړ ډیجیټل مرکز دی.
                     تاسو کولی شئ دلته کتابونه، څېړنیزې مقالې او نور مهم مواد ومومئ،
-                    .څو ستاسو د علمي او شخصي پرمختګ ملاتړ وکړي
-
+                    څو ستاسو د علمي او شخصي پرمختګ ملاتړ وکړي.
                 </p>
+
             </div>
 
             <div class="socials">
+
                 <h2>موږ وڅاري</h2>
-                  <div>
-                    <a href="https://whatsapp.com"><img src="./assets/logos/whatsapp.png" alt="" width="45" height="45"></a>
-                    <a href="https://x.com"><img src="./assets/logos/logo-white.png" alt="" width="45" height="45"></a>
-                    <a href="https://facebook.com"><img src="./assets/logos/facebook.png" alt="" width="45" height="45"></a>
-                    <a href="https://youtube.com"><img src="./assets/logos/youtube (1).png" alt="" width="45" height="45"></a>
+
+                <div>
+                    <a href="https://whatsapp.com">
+                        <img src="./assets/logos/whatsapp.png" alt="" width="45" height="45">
+                    </a>
+
+                    <a href="https://facebook.com">
+                        <img src="./assets/logos/facebook.png" alt="" width="45" height="45">
+                    </a>
+
+                    <a href="https://youtube.com">
+                        <img src="./assets/logos/youtube (1).png" alt="" width="45" height="45">
+                    </a>
                 </div>
+
             </div>
 
-       
             <div class="footer-section">
+
                 <h2 dir="rtl">اړیکه ونیسي</h2>
 
-                <p dir="rtl"><strong>ایمیل:</strong> <span dir="ltr">ABNE.library@gmail.com</span></p>
+                <p dir="rtl">
+                    <strong>ایمیل:</strong>
+                    <span dir="ltr">ABNE.library@gmail.com</span>
+                </p>
 
-                <p dir="rtl"><strong>تماس شمیره:</strong> <span dir="ltr">+93 700 000 000</span></p>
+                <p dir="rtl">
+                    <strong>تماس شمیره:</strong>
+                    <span dir="ltr">+93 700 000 000</span>
+                </p>
 
-                <p dir="rtl"><strong>ادرس:</strong> کندهار،افغانستان</p>
+                <p dir="rtl">
+                    <strong>ادرس:</strong>
+                    کندهار، افغانستان
+                </p>
 
-           
             </div>
 
         </div>
 
-      
         <div class="footer-bottom">
             <p>© 2026 MyLibrary | All Rights Reserved</p>
         </div>
+
     </footer>
+
+    <script src="./home.js"></script>
+    <script src="theme.js"></script>
+
+    <script>
+        const questions = document.querySelectorAll(".faq-question");
+
+        questions.forEach(question => {
+
+            question.addEventListener("click", () => {
+
+                const answer = question.nextElementSibling;
+
+                if (answer.style.maxHeight) {
+                    answer.style.maxHeight = null;
+                } else {
+                    answer.style.maxHeight = answer.scrollHeight + "px";
+                }
+
+            });
+
+        });
+    </script>
 
 </body>
 
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

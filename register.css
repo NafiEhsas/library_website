@@ -20,6 +20,10 @@
     font-style: normal;
 }
 
+small{
+    color:red;
+}
+
 body{
     background: var(--bg-color);
 }
@@ -72,8 +76,8 @@ body{
         padding: 12px 15px;
         border: 1px solid #2c5364;
         border-radius: 10px;
-        background: rgba(255,255,255,0.1);
-        color: #FFFCEF;
+        background: var(--card-bg-color);
+        color: black;
         font-family: "bahij nazanin", sans-serif;
         font-size: 1rem;
         transition: all 360ms;
@@ -83,16 +87,17 @@ body{
     .form-group select:focus {
         outline: none;
         border-color: #ffd700;
-        background: rgba(255,215,0,0.1);
+        background: rgb(234, 232, 232);
+        
     }
 
     .form-group input::placeholder {
-        color: rgba(255,252,239,0.5);
+        color: darkred;
     }
 
     .form-group select option {
-        background: #203a43;
-        color: #FFFCEF;
+        background: var(--card-bg-color);
+        color: gray;
     }
 
     .radio-group {

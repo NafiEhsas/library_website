@@ -21,16 +21,17 @@ header {
   width: 100%;
   padding: 10px 15px 10px 45px;
   border-radius: 30px;
-  border: none;
+  border: 1px solid gray;
   outline: none;
-  background: rgba(255, 255, 255, 0.15);
-  color: white;
+  background: rgb(235, 229, 229);
+  color: gray;
   font-size: 14px;
   backdrop-filter: blur(12px);
   transition: 0.3s;
   text-align: right;
   direction: rtl;
 }
+
 
 #ad_container {
   display: flex;
@@ -103,13 +104,13 @@ header {
   background: none;
   background-clip: unset;
   -webkit-background-clip: unset;
-  color: #e67e22;
+  color: #d1ccc7;
   font-weight: 400;
 }
 
 
 #search_container input::placeholder {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(214, 86, 86, 0.7);
 }
 
 #search_container img {
@@ -122,7 +123,7 @@ header {
 }
 
 #search_container input:focus {
-  background: rgba(255, 255, 255, 0.25);
+  background:whitesmoke;
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
 }
 
@@ -173,8 +174,6 @@ header {
 
 .navbar {
   background: var(--bg-color);
-  /* box-shadow: 0 6px 20px gray; */
-  /* box-shadow: rgba(240, 18, 18, 0.04) 0px 10px 10px; */
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -23px;
   padding: 15px;
   position: sticky;
@@ -191,11 +190,7 @@ header {
   justify-content: center;
 }
 
-.logo {
-  color: white;
-  font-size: 30px;
-  font-weight: bold;
-}
+
 
 .nav-links {
   display: flex;
@@ -204,7 +199,7 @@ header {
 }
 
 .nav-links a {
-  color: white;
+  /* color: white; */
   text-decoration: none;
   transition: 0.3s;
   font-weight: 300;
@@ -256,6 +251,5 @@ header {
         #ad_container{
           margin-bottom: 5px;
         }
-
-    
     }
+
